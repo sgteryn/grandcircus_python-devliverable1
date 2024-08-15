@@ -3,7 +3,7 @@
 user_name = input("Welcome to GC Mini Golf! What is your name? ")
 
 # create game options in an array with game being played and number of holes as int
-game_options = ["3", "6"]
+#game_options = ["3", "6"]
 
 # prompt user to make a game selection to play 3 or 6 holes of mini golf
 game_selection = input(f"Hi {user_name}! Would you like to play 3 or 6 holes? ")
@@ -23,10 +23,10 @@ if game_selection == "3":
 
     # If over par, message should read "Nice try, (name)... Your total score was: +(par).
     if total_putts > total_course_par:
-        print(f"Good game, {user_name}. Your total score was: + {golfers_total_par}.")
+        print(f"Nice try, {user_name}. Your total score was: + {golfers_total_par}.")
     # If under par, the message should read "Great job, (name)! Your total score was: -(par)."
     elif total_putts < total_course_par:
-        print(f"Nice try, {user_name}. Your total score was: - {golfers_total_par}.")
+        print(f"Great Job, {user_name}. Your total score was: - {golfers_total_par}.")
     # If even with par, the message should read "Good game, (name). Your total score was: 0."
     else:
         print(f"Good game, {user_name}. Your total score was: {golfers_total_par}.")
